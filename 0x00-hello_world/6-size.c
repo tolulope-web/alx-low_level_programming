@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - print various types of sizes on computer
  *
- * Result : 0 if successful
+ * Result : 0 if properly executed
  */
 int main(void)
 {
@@ -13,11 +13,11 @@ int main(void)
 	char d;
 	float f;
 
-	printf("Size of a char: %lu byte(s)\n", (unsigned long) sizeof(d));
-	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
-	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
-	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
-	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	printf("Size of a char: %lu byte(s)\n", sizeof(char));
+	printf("Size of an int: %lu byte(s)\n", sizeof(int));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %lu byte(s)\n", sizeof(float));
 	return (0);
 }
 
