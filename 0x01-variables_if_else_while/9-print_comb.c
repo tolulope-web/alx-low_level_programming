@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - main block
+ * main - main should return zero.
  * Description : return numbers printed in ascending order
  * print all the possible combinations of single digit numbers
  * numberss must be separated by commas and space
@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int i;
+	int i = 0;
 
 	while (i < 10)
 	{

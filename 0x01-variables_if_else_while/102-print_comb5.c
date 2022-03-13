@@ -15,10 +15,10 @@ int main(void)
 	{
 		a = i / 10;
 		b = i % 10;
-		for (i = 0; i < 100; i++)
+		for (j = 0; j < 100; j++)
 		{
-			c = i / 10;
-			d = i % 10;
+			c = j / 10;
+			d = j % 10;
 
 			if (a < c || (a == c && b < d))
 			{
