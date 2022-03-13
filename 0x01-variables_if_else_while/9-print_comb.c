@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * main - block
- * Description: print all the possible combinations of single digit numbers
+ * main - main block
+ * Description : return numbers printed in ascending order
+ * print all the possible combinations of single digit numbers
  * numberss must be separated by commas and space
  * you are only allowed to use 4 'putchar'
- * Return : 0
+ * Return : 0 (Success)
  */
 int main(void)
 {
