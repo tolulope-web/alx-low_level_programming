@@ -1,25 +1,21 @@
 #include <stdio.h>
+
 /**
- * main - main should return zero.
- * Description : return numbers printed in ascending order
- * print all the possible combinations of single digit numbers
- * numberss must be separated by commas and space
- * you are only allowed to use 4 'putchar'
- * Return : 0 (Success)
+ * main - prints all possible combinations of single-digit numbers
+ * Return: 0 Always (Success)
  */
 int main(void)
 {
-	int i = 0;
+	int n;
 
-	while (i < 10)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(i + '0');
-			if (i < 9)
-			{
-				putchar(44);
-				putchar(32);
-			}
-			i++;
+		putchar(n);
+		if (n != 57)
+		{
+			putchar(',);
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
