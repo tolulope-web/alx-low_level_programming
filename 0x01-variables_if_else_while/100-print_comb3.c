@@ -1,33 +1,27 @@
-
 #include <stdio.h>
 /**
- * main - block
- * Description: print all possible combination of two digit
- * two digit must be different
- * print only smallest combination of two digits
- * you can only use 'putchar' up to 5 times
- * Return : 0
+ * main - prints all possible different combinations of two digits
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, j, k;
+	int n, m;
 
-	i = 0;
-	while (i < 100)
+	for (n = 48; n <= 56; n++)
 	{
-		j = i % 10;
-		k = i / 10;
-		if (k < j)
+		for (m = 49; m <= 57; m++)
 		{
-			putchar(k + '0');
-			putchar(j + '0');
-			if (i < 89)
+			if (m > n)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(n);
+				putchar(m);
+			if (n != 56 || m != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			}
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);
