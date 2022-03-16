@@ -4,10 +4,12 @@
  *
  * Result: always 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	char c;
+
 	c = 'a';
+
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
