@@ -1,27 +1,30 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_number - prints an integer
- * @n: integer to be printed
+ * main - prints the numbers from 1 to 100 followed by a new line
+ * for multiples of 3 print Fizz
+ * for multiples of 5 print Buzz
+ * for multipes of 3 and 5 print FizzBuzz
+ *
+ * Return: returns 0
  */
-void print_number(int n)
+int main(void)
 {
-    unsigned int n1;
+int i;
 
-    if (n < 0)
-    {
-        n1 = -n;
-        _putchar('-');
-    }
-    else
-    {
-        n1 = n;
-    }
-
-    if (n1 / 10)
-    {
-        print_number(n1 / 10);
-    }
-
-    _putchar((n1 % 10) + '0');
+for (i = 1; i <= 100; i++)
+{
+if (i % 5 == 0 && i % 3 == 0)
+printf("%s", "FizzBuzz");
+else if (i % 3 == 0)
+printf("%s", "Fizz");
+else if (i % 5 == 0)
+printf("%s", "Buzz");
+else
+printf("%d", i);
+if (i != 100)
+printf(" ");
+}
+printf("\n");
+return (0);
 }
